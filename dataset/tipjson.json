@@ -1,0 +1,19 @@
+{
+	"name": "tipjson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BusinessBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "yelp_academic_dataset_tip.json",
+				"container": "traineecontainer"
+			}
+		},
+		"schema": {}
+	}
+}

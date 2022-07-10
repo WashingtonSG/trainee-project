@@ -1,0 +1,41 @@
+{
+	"name": "tipParquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BusinessBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "tip.parquet",
+				"container": "ouput"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "user_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "business_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "text",
+				"type": "UTF8"
+			},
+			{
+				"name": "date",
+				"type": "UTF8"
+			},
+			{
+				"name": "compliment_count",
+				"type": "INT64"
+			}
+		]
+	}
+}
