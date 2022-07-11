@@ -35,17 +35,21 @@
 							"type": "ParquetWriteSettings"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mapComplexValuesToString": true
+					}
 				},
 				"inputs": [
 					{
-						"referenceName": "Json1",
+						"referenceName": "BusinessJson",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet1",
+						"referenceName": "BusinessParquet",
 						"type": "DatasetReference"
 					}
 				]
@@ -147,6 +151,7 @@
 				]
 			}
 		],
+		"concurrency": 1,
 		"annotations": []
 	}
 }
