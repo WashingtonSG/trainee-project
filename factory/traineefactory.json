@@ -1,0 +1,9 @@
+{
+	"name": "traineefactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "99d46834-5613-4b7c-af7e-21896387fe2c",
+		"tenantId": "c6169af8-257a-49dd-90b4-b1179f1830e9"
+	}
+}
