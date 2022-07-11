@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "tip"
+			"table": "checking"
 		}
 	}
 }
