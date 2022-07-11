@@ -40,7 +40,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					}
 				]
@@ -77,13 +77,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "checkingParquet",
+						"referenceName": "tipParquet",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					}
 				]
@@ -120,13 +120,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "BusinessParquet",
+						"referenceName": "checkingParquet",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "AzureSqlTable3",
 						"type": "DatasetReference"
 					}
 				]
