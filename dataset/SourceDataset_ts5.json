@@ -1,0 +1,72 @@
+{
+	"name": "SourceDataset_ts5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BusinessBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "ouput"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "business_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "name",
+				"type": "UTF8"
+			},
+			{
+				"name": "address",
+				"type": "UTF8"
+			},
+			{
+				"name": "city",
+				"type": "UTF8"
+			},
+			{
+				"name": "state",
+				"type": "UTF8"
+			},
+			{
+				"name": "postal_code",
+				"type": "UTF8"
+			},
+			{
+				"name": "latitude",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "longitude",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "stars",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "review_count",
+				"type": "INT64"
+			},
+			{
+				"name": "is_open",
+				"type": "INT64"
+			},
+			{
+				"name": "categories",
+				"type": "UTF8"
+			},
+			{
+				"name": "hours",
+				"type": "UTF8"
+			}
+		]
+	}
+}
