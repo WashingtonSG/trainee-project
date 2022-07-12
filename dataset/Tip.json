@@ -1,0 +1,38 @@
+{
+	"name": "Tip",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TraineeBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "yelp_academic_dataset_tip.json",
+				"container": "input"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"user_id": {
+					"type": "string"
+				},
+				"business_id": {
+					"type": "string"
+				},
+				"text": {
+					"type": "string"
+				},
+				"date": {
+					"type": "string"
+				},
+				"compliment_count": {
+					"type": "integer"
+				}
+			}
+		}
+	}
+}
