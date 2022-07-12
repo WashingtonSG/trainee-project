@@ -39,13 +39,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "business",
+						"referenceName": "Business",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Parquet1",
+						"referenceName": "BusinessParquet",
 						"type": "DatasetReference"
 					}
 				]
@@ -87,13 +87,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "checking",
+						"referenceName": "Checking",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "checkingParquet",
+						"referenceName": "CheckingParquet",
 						"type": "DatasetReference"
 					}
 				]
@@ -190,6 +190,54 @@
 				"outputs": [
 					{
 						"referenceName": "TipParquet",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Copy review",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "Review",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ReviewParquet",
 						"type": "DatasetReference"
 					}
 				]

@@ -1,5 +1,5 @@
 {
-	"name": "BusinessParquet",
+	"name": "ReviewParquet",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "TraineeBlobStorage1",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "business.parquet",
+				"fileName": "ReviewParquet.parquet",
 				"container": "output"
 			},
 			"compressionCodec": "snappy"

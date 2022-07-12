@@ -1,5 +1,5 @@
 {
-	"name": "Checking",
+	"name": "Review",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "TraineeBlobStorage1",
@@ -10,14 +10,35 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "yelp_academic_dataset_checkin.json",
+				"fileName": "yelp_academic_dataset_review.json",
 				"container": "input"
 			}
 		},
 		"schema": {
 			"type": "object",
 			"properties": {
+				"review_id": {
+					"type": "string"
+				},
+				"user_id": {
+					"type": "string"
+				},
 				"business_id": {
+					"type": "string"
+				},
+				"stars": {
+					"type": "number"
+				},
+				"useful": {
+					"type": "integer"
+				},
+				"funny": {
+					"type": "integer"
+				},
+				"cool": {
+					"type": "integer"
+				},
+				"text": {
 					"type": "string"
 				},
 				"date": {

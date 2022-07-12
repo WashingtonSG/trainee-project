@@ -1,5 +1,5 @@
 {
-	"name": "checkingParquet",
+	"name": "CheckingParquet",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "TraineeBlobStorage1",
